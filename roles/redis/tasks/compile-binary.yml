@@ -1,0 +1,18 @@
+---
+- unarchive:
+    src: redis-5.0.7.tar.gz
+    dest: "{{ redis_user_home_directory }}"
+  become: true
+  become_user: "{{ redis_user_name }}"
+
+- apt:
+    force_apt_get: true
+    update_cache: true
+    name: build-essential
+    state: present
+  become: true
+
+- make:
+    chdir: "{{ redis_source_directory }}"
+  become: true
+  become_user: "{{ redis_user_name }}"

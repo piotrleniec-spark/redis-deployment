@@ -1,0 +1,5 @@
+---
+redis_user_name: redis
+redis_user_home_directory: /home/{{ redis_user_name }}
+redis_source_directory: "{{ redis_user_home_directory }}/redis-5.0.7"
+redis_server_binary_path: "{{ redis_source_directory }}/src/redis-server"
