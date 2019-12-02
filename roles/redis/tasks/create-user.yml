@@ -1,4 +1,0 @@
----
-- user:
-    name: "{{ redis_user_name }}"
-  become: true

@@ -1,5 +1,0 @@
----
-- import_tasks: create-user.yml
-- import_tasks: compile-binary.yml
-- import_tasks: configure-systemd.yml
-- import_tasks: start-process.yml

@@ -1,0 +1,12 @@
+---
+- template:
+    src: redis.service.j2
+    dest: /etc/systemd/system/redis.service
+  become: true
+
+- systemd:
+    daemon_reload: true
+    enabled: true
+    name: redis
+    state: restarted
+  become: true

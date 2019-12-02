@@ -1,0 +1,10 @@
+---
+- copy:
+    src: "{{ item }}"
+    dest: /usr/local/bin
+    mode: u=rwx,g=xr,o=x
+  with_items:
+    - redis-benchmark
+    - redis-cli
+    - redis-server
+  become: true

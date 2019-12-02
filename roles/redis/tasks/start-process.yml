@@ -1,7 +1,0 @@
----
-- systemd:
-    daemon_reload: true
-    enabled: true
-    name: redis
-    state: restarted
-  become: true

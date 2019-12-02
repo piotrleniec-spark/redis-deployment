@@ -1,0 +1,10 @@
+---
+- apt:
+    force_apt_get: true
+    update_cache: true
+    name: build-essential
+    state: present
+  become: true
+
+- make:
+    chdir: "{{ redis_source_directory }}"

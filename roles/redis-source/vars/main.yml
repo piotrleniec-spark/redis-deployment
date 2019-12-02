@@ -1,0 +1,3 @@
+---
+home_directory: /home{{ ansible_user }}
+redis_source_directory: "{{ home_directory }}/redis-5.0.7"

@@ -1,0 +1,3 @@
+---
+- import_tasks: copy-source.yml
+- import_tasks: compile-binaries.yml
